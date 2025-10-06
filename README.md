@@ -10,9 +10,9 @@ Este projeto implementa um formulário web inteligente para busca automática de
 1. Criar uma pasta para o projeto
 2. Criar o arquivo index.html com o codigo da aplicação ViaCEP encontrada em: https://viacep.com.br/exemplo/jquery/
 3. Criar o Dockerfile com o conteúdo
-FROM nginx:alpine
+`FROM nginx:alpine
 COPY ./index.html /usr/share/nginx/html/index.html
-EXPOSE 80
+EXPOSE 80`
 
 #Para costruiar a imagem , basta executar o seguinte comando:
 
