@@ -20,7 +20,7 @@ Este projeto implementa um formulário web inteligente para busca automática de
 
 - Para construir a imagem, execute:
     ```
-    docker image build -t sky88888888/ngix_viacep:latest .
+    docker image build -t sky88888888/ngix_viacep:latest
     ```
 
 - Para enviar a imagem para o Docker Hub, execute:
