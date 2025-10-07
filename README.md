@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Criar um Dockerfile para configurar um container NGINX que serve uma página HTML. Você também irá publicar a imagem no Docker Hub e versionar o projeto no GitHub, incluindo um arquivo README com instruções detalhadas.
+Projeto: Criar um Dockerfile para configurar um container NGINX que serve uma página HTML. Você também irá publicar a imagem no Docker Hub e versionar o projeto no GitHub, incluindo um arquivo README com instruções detalhadas.
 
 ## Conteúdo do projeto
 
@@ -14,11 +14,11 @@ Criar um Dockerfile para configurar um container NGINX que serve uma página HTM
 
 1. Criar uma pasta para o projeto.
 2. Baixar o arquivo index.html.
-3. Baixar o arquivo Dockerfile
+3. Construir a imagem:
 
 ### Para construir, enviar e executar a imagem Docker:
 
-- Para construir a imagem, execute:
+- Construir a imagem:
     ```
     docker image build -t sky88888888/ngix_viacep:latest
     ```
