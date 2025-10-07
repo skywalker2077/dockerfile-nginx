@@ -1,20 +1,20 @@
-# ViaCEP - Consulte CEPs de todo o Brasil
+# ViaCEP -  Tafefa 1
 
 ## Descrição
 
-Este projeto implementa um formulário web inteligente para busca automática de endereços brasileiros através do CEP (Código de Endereçamento Postal). Utilizando a API gratuita do ViaCEP, o siste[...]
+Criar um Dockerfile para configurar um container NGINX que serve uma página HTML. Você também irá publicar a imagem no Docker Hub e versionar o projeto no GitHub, incluindo um arquivo README com instruções detalhadas.
 
+## Conteúdo do projeto
+
+- index.html
+- Dockerfile
+- README.md
 
 ## Passos para construir a imagem:
 
-1. Criar uma pasta para o projeto
-2. Criar o arquivo index.html com o codigo da aplicação ViaCEP encontrada em: https://viacep.com.br/exemplo/jquery/
-3. Criar o Dockerfile com o conteúdo:
-    ```
-    FROM nginx:alpine
-    COPY ./index.html /usr/share/nginx/html/index.html
-    EXPOSE 80
-    ```
+1. Criar uma pasta para o projeto.
+2. Baixar o arquivo index.html.
+3. Baixar o arquivo Dockerfile
 
 ### Para construir, enviar e executar a imagem Docker:
 
@@ -23,12 +23,13 @@ Este projeto implementa um formulário web inteligente para busca automática de
     docker image build -t sky88888888/ngix_viacep:latest
     ```
 
-- Para enviar a imagem para o Docker Hub, execute:
+- Fazer login no Docker Hub e enviar a imagem:
+
     ```
     docker push sky88888888/ngix_viacep:latest
     ```
 
-- Para executar o container da aplicação, execute:
+- Executar o container da aplicação, execute:
     ```
     docker run -d -p 80:80 sky88888888/ngix_viacep:latest
     ```
